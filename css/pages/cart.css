@@ -1,0 +1,161 @@
+.page-title h1 {
+  font: 600 36px/45px "source-serif-pro";
+}
+.page-title h1::after {
+  content: "";
+  display: block;
+  margin: 0.75rem auto 2rem;
+  max-width: 102px;
+  height: 6px;
+  background: var(--color-primary-brand);
+}
+
+@media only screen and (min-width: 1280px) {
+  .cart-container {
+    max-width: 1396px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 0 3rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cart-container .cart-content-wrapper {
+    max-width: 905px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+}
+.cart-container .cart-content-wrapper .cart-list .cart {
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.75rem;
+}
+.cart-container .cart-content-wrapper .cart-list .cart img {
+  max-width: 100px;
+  margin: 0 1rem 0 0;
+}
+.cart-container .cart-content-wrapper .cart-list .cart .product-content-wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.cart-container .cart-content-wrapper .cart-list .cart .product-content-wrapper .product-details-wrapper .title {
+  font: 600 18px/1 "mauli";
+  margin: 0 0 0.5rem;
+}
+.cart-container .cart-content-wrapper .cart-list .cart .product-content-wrapper .product-details-wrapper p {
+  font: normal 16px/26px "mauli";
+  margin: 0 0 0.5rem;
+}
+.cart-container .cart-content-wrapper .cart-list .cart .quantity-box {
+  max-width: calc(100% - 100px);
+  margin: 0 0 0 auto;
+  padding: 0 4rem 0 0;
+}
+@media only screen and (min-width: 1280px) {
+  .cart-container .cart-content-wrapper .cart-list .cart .quantity-box {
+    align-self: center;
+  }
+}
+.cart-container .cart-content-wrapper .cart-list .cart .quantity-box button {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-l2);
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--color-gray-l2);
+  display: flex;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 1;
+}
+.cart-container .cart-content-wrapper .cart-list .cart .quantity-box input {
+  margin: 0 0.5rem;
+  max-width: 80px;
+  width: 100%;
+  border: 2px solid var(--color-gray-l2);
+  border-radius: 8px;
+}
+@media only screen and (min-width: 1280px) {
+  .cart-container .cart-content-wrapper .cart-list .cart .options-wrapper {
+    padding: 0 1rem;
+    align-self: center;
+  }
+  .cart-container .cart-content-wrapper .cart-list .cart .options-wrapper .option-row {
+    margin: 0 0 1rem;
+  }
+  .cart-container .cart-content-wrapper .cart-list .cart .options-wrapper .option-row p {
+    font: 600 12px/14px mauli;
+  }
+}
+.cart-container .cart-content-wrapper .other-details {
+  padding: 0 1rem;
+  margin: 0 0 1.5rem;
+}
+@media only screen and (min-width: 1280px) {
+  .cart-container .cart-content-wrapper .other-details {
+    margin: 3rem 0 0;
+  }
+}
+.cart-container .cart-content-wrapper .other-details .step-wrapper {
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border: 1px solid #d1d3d6;
+}
+@media only screen and (min-width: 1280px) {
+  .cart-container .cart-content-wrapper .other-details .step-wrapper .content-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 1rem 0 0;
+  }
+}
+.cart-container .cart-content-wrapper .other-details .step-wrapper p {
+  font: normal 14px/17.5px "mauli";
+  color: #72777f;
+}
+.cart-container .cart-content-wrapper .other-details .step-wrapper p.title {
+  color: #172026;
+  font: normal 16px/26px "mauli";
+}
+.cart-container .pricing-summary-wrapper {
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 1280px) {
+  .cart-container .pricing-summary-wrapper {
+    max-width: 435px;
+    width: 100%;
+    display: block;
+    border: 1px solid #D1D3D6;
+    padding: 2rem 1.5rem 0 2rem;
+  }
+}
+.cart-container .pricing-summary-wrapper .title {
+  font: 600 20px/30px mauli;
+  margin: 0 0 1.5rem;
+}
+.cart-container .pricing-summary-wrapper .price-row {
+  margin: 0 0 1rem;
+}
+.cart-container .pricing-summary-wrapper .price-row.total p {
+  font-weight: 700;
+}
+.cart-container .pricing-summary-wrapper .price-row p {
+  font: normal 16px/24px mauli;
+  color: #172026;
+}
+.cart-container .pricing-summary-wrapper .price-btn-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+}
+.cart-container .pricing-summary-wrapper .price-btn-wrapper a {
+  max-width: 244px;
+  width: 100%;
+  margin: 0 auto 1rem;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pages/checkout/1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENIA</title>
+  <script src="../scripts/myScript.js"></script>
+  <script src="../scripts/cart.js"></script>
+
+</head>
+
+<body class="product-details-page">
+  <header>
+    <div class="header-wrapper d-flex justify-content-between align-items-center">
+      <button class="navbar-toggle" onclick="toggleNavbar()"><img src="../images/align-justify.svg" alt="Toggle"
+          class="navbar-toggle-icon"></button>
+      <a href="/"><img src="../images/logo.svg" alt="VENIA" class="site-logo"></a>
+      <div class="navbar" id="navbar">
+        <div class="navbar-head">
+          <button class="close" onclick="toggleNavbar()"><img src="../images/x.svg" alt="Close"></button>
+        </div>
+        <ul>
+          <li class="nav-item active">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Electronics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Jewellery</a>
+          </li>
+        </ul>
+      </div>
+      <a href="../cart.html">
+      <img src="../images/shopping-bag.svg" alt="Cart" class="cart-icon">
+    </a>
+    </div>
+  </header>
+  <div class="page-title text-center">
+    <h1>Checkout</h1>
+  </div>
+  <div class="main-container cart-container">
+    <div class="cart-content-wrapper">
+      <p class="guest-title">Guest Checkout</p>
+      <p class="contact-title">Contact information</p>
+      <p>We’ll use these details to keep you informed on your delivery.</p>
+      <div class="contact-information-wrapper">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="input-group">
+
+          <label for="number">Phone Number</label>
+          <input type="text" id="number">
+        </div>
+      </div>
+      <div class="shipping-information-wrapper">
+        <p class="shipping-title title">
+          1. Shipping Information
+        </p>
+        <div class="input-group country">
+
+          <label for="country">Country</label>
+          <select id="country">
+            <option value="US">United States</option>
+            <option value="IN">India</option>
+          </select>
+        </div>
+        <div class="input-group">
+
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name">
+        </div>
+        <div class="input-group">
+
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" id="last_name">
+        </div>
+        <div class="input-group">
+
+          <label for="street_address">Street Address</label>
+          <input type="text" name="street_address" id="street_address">
+        </div>
+        <div class="input-group">
+
+          <label for="street_address_2">Street Address</label>
+          <input type="text" name="street_address_2" id="street_address_2">
+        </div>
+        <div class="input-group">
+
+          <label for="city">Street Address</label>
+          <input type="text" name="city" id="city">
+        </div>
+        <div class="input-group state">
+
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <option value="California">California</option>
+          </select>
+        </div>
+        <div class="input-group zip">
+
+          <label for="zip">Zip</label>
+          <input type="text" name="zip" id="zip">
+        </div>
+        <a class="button-secondary" href="./2.html">Continue</a>
+      </div>
+      <div class="shipping-method-wrapper">
+        <p class="title">2. Shipping Method</p>
+      </div>
+      <div class="payment-information-wrapper">
+        <p class="title">3. payment Information</p>
+      </div>
+    </div>
+    <div>
+      <div class="d-none d-lg-flex signup-wrapper">
+        <p>Sign in for Express Checkout</p>
+        <button class="button-secondary">SIGN IN</button>
+      </div>
+      <div class="pricing-summary-wrapper">
+        <div class="pricing-summary">
+          <p class="title">Pricing Summary</p>
+          <div class="d-flex price-row justify-content-between">
+            <p>Subtotal</p>
+            <p>$ 388.00</p>
+          </div>
+          <div class="d-flex price-row justify-content-between">
+            <p>Coupon</p>
+            <p>- $ 77.60</p>
+          </div>
+          <div class="d-flex price-row justify-content-between">
+            <p>Gift Card</p>
+            <p>- $ 100.00</p>
+          </div>
+          <div class="d-flex price-row justify-content-between">
+            <p>Estimated tax</p>
+            <p>$ 23.28</p>
+          </div>
+          <div class="d-flex price-row justify-content-between">
+            <p>Estimated shipping</p>
+            <p>FREE</p>
+          </div>
+          <div class="d-flex price-row justify-content-between total">
+            <p>Estimated Total</p>
+            <p>$ 233.68</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="site-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <p class="link-head">Account</p>
+          <a href="">Sign In</a>
+          <a href="">Register</a>
+          <a href="">Order Status</a>
+          <a href="">Returns</a>
+        </div>
+        <div class="footer-col">
+          <p class="link-head">About Us</p>
+          <a href="">Our Story</a>
+          <a href="">Email Sign Up</a>
+          <a href="">Give Back</a>
+        </div>
+        <div class="footer-col">
+          <p class="link-head">Help</p>
+          <a href="#">Live Chat</a>
+          <a href="#">Contact us</a>
+          <a href="#">Order Status</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-col">
+          <p class="link-head">Follow Us!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore.</p>
+          <div class="social-links">
+            <img src="../images/instagram.svg" alt="Instagram" class="instagram-icon" >
+            <img src="../images/facebook.svg" alt="Facebook" class="facebook-icon" >
+            <img src="../images/twitter.svg" alt="Twitter" class="twitter-icon" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="below-footer d-none d-lg-flex">
+      <div>
+        <div class="logo-wrapper"><img src="../images/logo-black.svg" alt="Logo"></div>
+        <p>© Company Name Address Ave, City Name, State ZIP</p>
+        <div class="privacy-links d-flex">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

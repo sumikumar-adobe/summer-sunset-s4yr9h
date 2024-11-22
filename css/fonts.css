@@ -1,0 +1,23 @@
+@font-face {
+  font-family: source-serif-pro;
+  src: url(../fonts/SourceSerifPro/SourceSerifPro-Regular.otf);
+}
+@font-face {
+  font-family: source-serif-pro;
+  src: url(../fonts/SourceSerifPro/SourceSerifPro-Semibold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: source-serif-pro;
+  src: url(../fonts/SourceSerifPro/SourceSerifPro-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: mauli;
+  src: url(../fonts/Mauli/Muli.ttf);
+}
+@font-face {
+  font-family: mauli;
+  src: url(../fonts/Mauli/Muli-SemiBold.ttf);
+  font-weight: 600;
+}

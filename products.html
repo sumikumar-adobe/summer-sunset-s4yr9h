@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/pages/products.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENIA</title>
+  <script src="./scripts/myScript.js"></script>
+  <script src="./scripts/products.js"></script>
+
+</head>
+
+<body class="products-page">
+  <header>
+    <div class="header-wrapper d-flex justify-content-between align-items-center">
+      <button class="navbar-toggle" onclick="toggleNavbar()"><img src="./images/align-justify.svg" alt="Toggle"
+          class="navbar-toggle-icon"></button>
+      <a href="/"><img src="./images/logo.svg" alt="VENIA" class="site-logo"></a>
+      <div class="navbar" id="navbar">
+        <div class="navbar-head">
+          <button class="close" onclick="toggleNavbar()"><img src="./images/x.svg" alt="Close"></button>
+        </div>
+        <ul>
+          <li class="nav-item active">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Electronics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Jewellery</a>
+          </li>
+        </ul>
+      </div>
+      <a href="./cart.html">
+      <img src="./images/shopping-bag.svg" alt="Cart" class="cart-icon">
+    </a>
+    </div>
+  </header>
+  <div class="main-container product-container">
+    <div class="product-banner">
+      <div class="banner-img-wrapper">
+        <img src="./images/home/jewellery.jpg" alt="Products" class="banner-img">
+      </div>
+      <div class="banner-content text-center">
+        <h1 class="banner-title">Men's <br />Outerwear<span class="banner-border"></span></h1>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="breadcrumb-option-wrapper">
+        <div class="breadcrumb">
+          <p class="para-regular">Clothing / Women's / Outerwear</p>
+        </div>
+        <div class="desk-count-wrapper">
+          <p>38 Results</p>
+          <select name="sort" id="sort">
+            <option value="Sort by Price">Sort by Price</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-options d-flex">
+        <div class="filter-btn-wrapper d-flex" onclick="toggleFilter()">
+          <img src="./images/products/sliders.svg" alt="Filter">
+          <p>Filter Results</p>
+        </div>
+        <div class="sort-wrapper d-flex">
+          <img src="./images/products/arrow-up.svg" alt="Sort">
+          <img src="./images/products/arrow-down.svg" alt="Sort">
+          <p>Sort Products</p>
+        </div>
+      </div>
+      <div class="count-wrapper text-center">
+        <p>38 Results</p>
+      </div>
+      <div class="d-flex">
+        <div class="filter-wrapper">
+          <div class="filter-head">
+            <p>Filters</p>
+            <button onclick="toggleFilter()"><img src="./images/x.svg" alt="Close"></button>
+          </div>
+          <p class="clear-para">
+            Clear all
+          </p>
+          <div class="category-section">
+            <p class="title">Categories</p>
+            <div class="input-group"><input type="checkbox" name="filter" id="filter_jewellery"><label
+                for="filter_jewellery">Jewellery</label></div>
+            <div class="input-group"><input type="checkbox" name="filter" id="filter_electronics"><label
+                for="filter_electronics">Electronics</label></div>
+            <div class="input-group"><input type="checkbox" name="filter" id="filter_men"><label for="filter_men">Men's
+                Clothing</label></div>
+            <div class="input-group"><input type="checkbox" name="filter" id="filter_women"><label
+                for="filter_women">Women's Clothing</label></div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="button-primary">SEE 17 Results</button>
+          </div>
+        </div>
+        <div class="product-list-wrapper">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="site-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <p class="link-head">Account</p>
+          <a href="">Sign In</a>
+          <a href="">Register</a>
+          <a href="">Order Status</a>
+          <a href="">Returns</a>
+        </div>
+        <div class="footer-col">
+          <p class="link-head">About Us</p>
+          <a href="">Our Story</a>
+          <a href="">Email Sign Up</a>
+          <a href="">Give Back</a>
+        </div>
+        <div class="footer-col">
+          <p class="link-head">Help</p>
+          <a href="#">Live Chat</a>
+          <a href="#">Contact us</a>
+          <a href="#">Order Status</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-col">
+          <p class="link-head">Follow Us!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore.</p>
+          <div class="social-links">
+            <img src="./images/instagram.svg" alt="Instagram" class="instagram-icon" >
+            <img src="./images/facebook.svg" alt="Facebook" class="facebook-icon" >
+            <img src="./images/twitter.svg" alt="Twitter" class="twitter-icon" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="below-footer d-none d-lg-flex">
+      <div>
+        <div class="logo-wrapper"><img src="./images/logo-black.svg" alt="Logo"></div>
+        <p>© Company Name Address Ave, City Name, State ZIP</p>
+        <div class="privacy-links d-flex">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

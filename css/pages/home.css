@@ -1,0 +1,289 @@
+.home-banner-img {
+  display: block;
+  min-height: 640px;
+  width: 100%;
+  background: url("../../images/home/venia-hero1.webp") no-repeat right center/auto 100%;
+  position: relative;
+}
+
+@media only screen and (min-width: 1280px) {
+  .home-banner-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #e5e5e7;
+    align-items: center;
+  }
+}
+.home-banner-wrapper .banner-content {
+  padding: 0 1rem;
+  position: absolute;
+  width: 100%;
+  color: var(--color-gray-l1);
+  box-sizing: border-box;
+  top: 296px;
+}
+@media only screen and (min-width: 1280px) {
+  .home-banner-wrapper .banner-content {
+    position: static;
+    color: #172026;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: left;
+  }
+  .home-banner-wrapper .banner-content > * {
+    max-width: 452px;
+    width: 100%;
+  }
+}
+.home-banner-wrapper .banner-content h1 {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1280px) {
+  .home-banner-wrapper .banner-content h1 {
+    font-size: 48px;
+    margin: 1rem 0;
+    line-height: 60px;
+  }
+}
+.home-banner-wrapper .banner-content p {
+  margin: 0 0 1.5rem;
+}
+
+.home-banner-img::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.category-section {
+  margin: -1.5rem 0 2rem;
+  padding: 0 1rem;
+}
+.category-section::after {
+  margin: 1rem auto 3rem;
+  content: "";
+  display: block;
+  width: 78px;
+  height: 8px;
+  background: var(--color-primary-brand);
+}
+@media only screen and (min-width: 1280px) {
+  .category-section::after {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .category-section {
+    display: flex;
+    max-width: 1373px;
+    margin: -1.5rem auto 0;
+  }
+}
+.category-section .category {
+  position: relative;
+  width: auto;
+  border-bottom: 8px solid var(--color-primary-brand);
+}
+@media only screen and (min-width: 1280px) {
+  .category-section .category {
+    margin: 0 0.25rem;
+  }
+}
+.category-section .category img {
+  max-width: 100%;
+}
+.category-section .category .category-content {
+  position: absolute;
+  padding: 1rem 2.5rem;
+  bottom: 0;
+  background: rgba(27, 37, 44, 0.8509803922);
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 1280px) {
+  .category-section .category .category-content {
+    padding: 1rem;
+  }
+}
+.category-section .title {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+@media only screen and (min-width: 1280px) {
+  .category-section .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.category-section .head-l {
+  font-weight: 400;
+  margin: 0;
+}
+.category-section p {
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 1280px) {
+  .category-section p {
+    margin: 0;
+  }
+}
+.category-section a {
+  margin: 0 auto 1rem;
+}
+
+.campaign-section {
+  display: block;
+  max-width: 1373px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.campaign-section::after {
+  content: "";
+  display: block;
+  max-width: 78px;
+  width: 100%;
+  margin: 2rem auto;
+  height: 8px;
+  background: var(--color-primary-brand);
+}
+@media only screen and (min-width: 1280px) {
+  .campaign-section::after {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .campaign-section {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .campaign-section .campaign-content {
+    max-width: 631px;
+    text-align: left;
+  }
+  .campaign-section .campaign-content::after {
+    content: "";
+    display: block;
+    max-width: 102px;
+    height: 8px;
+    background: var(--color-primary-brand);
+    margin: 4rem 0 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .campaign-section .campaign-content .btn-wrapper {
+    margin: 1.5rem 0 0;
+    display: flex;
+  }
+}
+.campaign-section .title {
+  margin: 0;
+}
+.campaign-section .head-l {
+  font-weight: 400;
+  margin: 0.5rem 0 1rem;
+}
+.campaign-section .button-primary {
+  margin: 1rem auto 1.25rem;
+}
+@media only screen and (min-width: 1280px) {
+  .campaign-section .button-primary {
+    margin: 0 2rem 0 0;
+  }
+}
+
+.conquer-section {
+  padding: 0 0 2rem;
+}
+@media only screen and (min-width: 1280px) {
+  .conquer-section {
+    display: flex;
+    max-width: 1373px;
+    margin: 2.5rem auto 5rem;
+  }
+}
+.conquer-section .section-banner {
+  display: block;
+  min-height: 210px;
+  width: 100%;
+  background: url("../../images/home/woman-wearing-orange-dress.jpeg") no-repeat center/auto 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .conquer-section .section-banner {
+    max-width: 836px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+}
+.conquer-section .section-content {
+  margin: -1rem 0 0;
+  padding: 0 1rem;
+  position: relative;
+}
+@media only screen and (min-width: 1280px) {
+  .conquer-section .section-content {
+    background: #1b252c;
+    width: 100%;
+    margin: -1rem 0;
+  }
+}
+.conquer-section .section-content > div {
+  margin: -1rem 0 0;
+  background: #1b252c;
+  padding: 4rem 1rem 2.5rem;
+}
+@media only screen and (min-width: 1280px) {
+  .conquer-section .section-content > div {
+    padding: 5rem 7rem;
+    margin: 0;
+    text-align: left;
+  }
+}
+.conquer-section .section-content > div .title {
+  font-size: 36px;
+  margin: 0 0 45px;
+  font-weight: 600;
+}
+.conquer-section .section-content > div .button-marketing {
+  margin: 2rem 0 0;
+}
+.conquer-section .section-content div.map-icon {
+  position: absolute;
+  max-width: 105px;
+  width: 100%;
+  padding: 0;
+  background: none;
+  height: 70px;
+  left: 2rem;
+  top: -1.75rem;
+  border-bottom: 8px solid var(--color-primary-brand);
+}
+@media only screen and (min-width: 1280px) {
+  .conquer-section .section-content div.map-icon {
+    bottom: 5rem;
+    top: auto;
+    left: 0;
+    transform: translate(-50%, 0);
+    display: flex;
+  }
+}
+.conquer-section .section-content div.map-icon img {
+  width: 100%;
+  max-width: 33px;
+  margin: 1rem auto 0;
+}
